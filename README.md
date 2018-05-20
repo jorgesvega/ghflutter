@@ -1,8 +1,18 @@
-# ghflutter
+# GHFlutter
 
-A new Flutter project.
+GHFlutter its a project build with Dart and Flutter that uses following:
 
-## Getting Started
+-  Import files and packages
+-  Widgets
+-  Networking
+-  Lists
+-  App theme
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+The project has been created following this tutorial:
+
+-  [Tutorial](https://www.raywenderlich.com/188257/getting-started-with-flutter)
+
+# Do you want to know more about Flutter and Dart?
+
+  -  [Flutter](https://flutter.io/)
+  -  [Dart Lang](https://www.dartlang.org/)
