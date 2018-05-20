@@ -58,16 +58,30 @@ class GHFlutterState extends State<GHFlutter> {
     );
   }
 
-  Widget _buildRow(int i) {
-    return new Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: new ListTile(
-        title: new Text("${_members[i].login}", style: _biggerFont),
-        leading: new CircleAvatar( // By setting the avatar as the leading attribute of the ListTile, it will show before the title within the row.
+  // Widget _buildRow(int i) {
+  //   return new Padding(
+  //     padding: const EdgeInsets.all(16.0),
+  //     child: new ListTile(
+  //       title: new Text("${_members[i].login}", style: _biggerFont),
+  //       leading: new CircleAvatar( // By setting the avatar as the leading attribute of the ListTile, it will show before the title within the row.
+  //         backgroundColor: Colors.green,
+  //         backgroundImage: new NetworkImage(_members[i].avatarURL),
+  //       ),
+  //     ),
+  //   );
+  // }
+
+  // Adapted to Dart 2
+  _buildRow(int i) =>
+    Padding(
+      padding: EdgeInsets.all(16.0),
+      child: ListTile(
+        title: Text("${_members[i].login}", style: _biggerFont),
+        leading: CircleAvatar( // By setting the avatar as the leading attribute of the ListTile, it will show before the title within the row.
           backgroundColor: Colors.green,
-          backgroundImage: new NetworkImage(_members[i].avatarURL),
+          backgroundImage: NetworkImage(_members[i].avatarURL),
         ),
-      ),
+      )
     );
   }
-}
+
